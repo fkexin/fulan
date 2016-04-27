@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="14058-styles.css" />
+
+
+    <title>联系我</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+<!-- NAVBAR
+================================================== -->
+<header class="header faso-header">
+      <div class="row">
+        <div class="col-1-1 text-center">
+          <div class="site-title"><a href="main.html"><img src="pictures/title.png" style="width:304px;height:100px;" /></a></div>
+          <!--<div class="mobile-nav menu-btn"><i class="fa fa-bars"></i></div>-->
+          <nav class="main-nav faso-nav">
+            <ul>
+              <!--<li class="selectednavlink"><a href="http://nagytibor.com">Home</a></li>-->
+              <li class="navlink"><a href="collection.html">Artwork</a></li>
+              <li class="navlink"><a href="about.html">Bio</a></li>
+              <!-- <li class="navlink"><a href="http://fulanfineart.com/books">Books</a></li> -->
+              <li class="navlink"><a href="contact.html">Contact</a></li>
+
+            </ul>
+          </nav>
+        </div>
+      </div>
+      </header>
+
+
+
+  <body>
+    <div class="content">
+        <h1 class="page-title text-center">Contact the Artist</h1>
+        
+          <section class="content-section faso-contact-section-contactform">
+            <div class="row">
+              <div class="col-1-2 centered">
+                
+                <form method="POST" action="clientContact.asp" onSubmit="" name="cf" id="cf">
+                  <font color="grey">
+                  <input type="hidden" name="_recipients" value="14058">
+                  <input type="hidden" name="_replyto" value="14058">
+                  <input type="hidden" name="required" value="Email">
+                  <input type="hidden" name="bda" id="bda" value="">
+                  <input type="hidden" name="bdb" id = "bdb" value="">
+                  <input type="hidden" name="bdc" id="bdc" value="">
+                  <input type="hidden" name="bde" id="bde" value="Y">
+                  <input type="hidden" name="_subject" value="A Client Contact From Your Website with fulanfineart.com">
+                  <input name="_requiredFields" type="hidden" vhttp://nagytibor.com/css/style/14058-styles.cssalue="Email">
+                  <div class="form-item">
+                    <label for="Name">姓名 <small>(required)</small></label>
+                    <input type="text" name="Name" class="faso-contact-form-input faso-contact-input-name">
+                  </div>
+                  <div class="form-item">
+                    <label for="Email">邮箱 <small>(required)</small></label>
+                    <input type="text" name="Email" class="faso-contact-form-input faso-contact-input-email">
+                  </div>
+                  <div class="form-item">
+                    <label for="Phone">电话号码 <small>(required)</small></label>
+                    <input type="text" name="Phone" class="faso-contact-form-input faso-contact-input-phone">
+                  </div>
+                  <div class="form-item">
+                    <label for="Comments">留言 <small>(required)</small></label>
+                    <textarea name="Comments" class="faso-contact-form-input faso-contact-input-comments"></textarea>
+                  </div>
+                  <div class="form-item">
+                    <!--<Cheifetz Captcha>-->
+                      <img src="http://nagytibor.com/aspcaptcha.asp?id=A47C53C15F6B4F5ABA138ED0235672D7" alt="This Is CAPTCHA Image" width="86" height="40" style="margin-bottom: 10px;" />
+                      <p style="margin-bottom: 10px;">
+                        验证字符：<br>
+                        请在下方框内输入图中字符：
+                      </p>
+                  <input type="text" name="Captcha" style="width: 50%;">               
+                  <input type="hidden" name="usecaptcha" value="True">
+                  <input type="hidden" name="captchaid" value="A47C53C15F6B4F5ABA138ED0235672D7">
+                  <!--</Cheifetz Captcha>-->
+                  </div>
+                  <div class="alert" style="display:none;"></div>
+                  <div class="form-item">
+                    <input type="submit" name="submit" value="Submit" />
+                  </div>
+                </form>
+                
+                <script>
+                  var a=Math.floor(Math.random()*11);
+                  var b=Math.floor(Math.random()*11);
+                  var c=a+b;
+                  document.forms["cf"].elements["bda"].value =a;
+                  document.forms["cf"].elements["bdb"].value =b;
+                  document.forms["cf"].elements["bdc"].value =c;
+                </script>
+              </div>
+            </div>    
+          </section>
+
+
+
+                      
+                  
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+      <!-- FOOTER -->
+      <footer>
+<!--         <p class="pull-right"><a href="#">Back to top</a></p>
+ --><!--         <p>&copy; 2015 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+ -->  </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+
+</html>
