@@ -30,17 +30,9 @@
 
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
-    <!-- lightbox to view large picture-->
+    <!--lightbox to view large picture-->
     <link rel="stylesheet" href="assets/css/lightbox.min.css">
-    <style>
-/*        a.none:{
-          color:#999999;
-        }*/
-        a.none:hover {
-          color:#b2b2b2;
-          text-decoration:none;
-        }
-    </style>
+
 
   </head>
 <!-- NAVBAR
@@ -69,25 +61,57 @@
   <body>
       <div class="content">
       <h1 class="page-title text-center"></h1>
-
-            
-      <section class="content-section">
-
-      <div class="row">
-      <font color="grey">
-      <div class="col-1-2">
-        <h2 class="text-center "><a href="collection.html" class="none"><font color="grey">山水作品</a></h2>
-        <p class="text-center"><a href="collection.html"><img src="image/青怡幽谷.jpg" alt="山水作品"></a></p>
-      </div>
-
-
-
-      <div class="col-1-2">
-        <h2 class="text-center"><a href="caligraphycollection.html" class="none"><font color="grey">书法作品</a></h2>
-        <p class="text-center"><a href="caligraphycollection.html" ><img src="image/caligraphy/IMG_8351.jpg" alt="书法作品"></a></p>
-      </div>
-
+        
+      <section class="padding-top">
+        <div class="row">
+          <div class="col-2-3 centered text-center">
+            <font color="grey">
+            <h2>山水作品</h2>          
+          </div>
+        </div>    
       </section>
+
+      <section>
+        <div class="row">
+          <div class="col-1-1">
+            
+          <ul class="grid margin-bottom-dbl">
+
+            <tr>
+              <td>
+                <li class="grid-item">
+                  <a class="example-image-link" href="image/青城幽居.jpg" data-lightbox="example-set" data-title="青城幽居">
+                    <div class="item-box">
+                     $directory = "mytheme/images/myimages";
+                       $images = glob($directory . "*.jpg"); 
+                       foreach($images as $image)
+                              {
+                                echo $image;
+                              }
+                      <img src="image/青城幽居.jpg" alt="青城幽居 ~ 68cm x 45cm" title="青城幽居 ~ 68cm x 45cm">
+                      <div class="item-caption">
+                          <h3 class="item-title">青城幽居
+                            <div class="item-category"> 
+                             <span>68cm x 45cm<br></span>                    
+                            </div>
+                          </h3>
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </td>
+            </tr>
+
+            <div class="pagination pull-right">
+              <ul>
+                <li>
+                  <a href="collection.html">1</a></li>
+                  <li><a href="collection2.html">&rarr;</a></li>
+              </ul>
+            </div>
+    </div>
+  </div>    
+
 
 
       <!-- FOOTER -->
